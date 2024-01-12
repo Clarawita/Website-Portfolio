@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clarawita</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="main-container">
+
+      <!-- navbar -->
+      <div class="navbar">
+        <div class="logo">
+          <a href="/">Clarawita's<br>Website Portfolio</a>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a class="anchor-nav" href="#portfolio">Portfolio</a></li>
+            <li><a class="anchor-nav" href="#skill">Skills</a></li>
+            <li><a class="anchor-nav" href="#contact">Contact</a></li>
+            <li><a href="/CV_Clarawita.pdf" target="_blank">
+              <button class="resume-btn">Resume</button>
+            </a></li>
+          </ul>
+        </nav>
+
+        <!-- Buat navbar responsive burger -->
+        <div class="burger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+      </div>
+      <!-- End of navbar -->
+
+      <!-- Head -->
+      <section id="head">
+        <div class="left-section-head">
+          <h3 class="intro">Hello there! My name is</h3>
+          <h1 class="name">Clarawita</h1>
+          <p class="paragraph">
+            As a first-year computer science student at Binus University @Alam Sutera, I am thrilled to embark on this exciting journey of exploring the vast world of technology. My passion lies in web development, particularly in frontend development, where I find joy in bringing beautiful and user-friendly designs to life.
+          </p>
+        </div>
+
+        <div class="right-section-head">
+          <img src="image/sapiens.png" alt="">
+        </div>
+      </section>
+      <!-- End of head -->
+
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <h1 class="pre-title">Featured Portfolios</h1>
+
+        <div class="grid-2">
+
+          <div class="port">
+            <div class="port-cover">
+              <img src="image/Screenshot 2024-01-12 135428.png" alt="">
+            </div>
+
+            <div class="port-info">
+              <div class="port-title">
+                <h4>Youtube Clone</h4>
+                <a href="https://github.com/Clarawita/YT-homepage-clone" target="_blank"><img src="image/iconmonstr-share-8-240.png" alt=""></a>
+              </div>
+            </div>
+
+            <div class="port-tags">
+              <div>HTML</div>
+              <div>CSS</div>
+            </div>
+
+            <p class="port-desc">Through this project, I have achieved proficiency in understanding and implementing the Grid Layout concept in web design. Implementing media queries has had a significant impact on the project's responsiveness.</p>
+          </div>
+
+          <div class="port">
+            <div class="port-cover">
+              <img src="image/Screenshot 2024-01-12 135505.png" alt="">
+            </div>
+
+            <div class="port-info">
+              <div class="port-title">
+                <h4>Mini Project Website</h4>
+                <a href="https://github.com/Clarawita/TPM_MiniProject" target="_blank"><img src="image/iconmonstr-share-8-240.png" alt=""></a>
+              </div>
+            </div>
+
+            <div class="port-tags">
+              <div>HTML</div>
+              <div>CSS</div>
+              <div>JavaScript</div>
+            </div>
+
+            <p class="port-desc">Here is my work in developing an interactive website project using HTML, CSS, and JavaScript. This project encompasses the creation of a Contact Us validation form and ensuring data accuracy and completeness before submission.</p>
+          </div>
+
+        </div>
+      </section>
+      <!-- End of portfolio -->
+
+      <!-- Skills -->
+      <section id="skill">
+        <h1 class="pre-title-skill">Skills & Education</h1>
+
+        <div class="skill-grid">
+          <div class="left-section-skill">
+            <div class="education">
+              <div class="line">
+                <div></div>
+              </div>
+              <div class="education-info">
+                <h4 class="education-title">Binus University</h4>
+                <p>Undergraduate - Computer Science</p>
+                <h4 class="education-year">2023 - Present</h4>
+              </div>
+            </div>
+            <div class="education">
+              <div class="line">
+                <div></div>
+              </div>
+              <div class="education-info">
+                <h4 class="education-title">Saint Ignasius High School</h4>
+                <p>Science Major</p>
+                <h4 class="education-year">2020 - 2023</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-section-skill">
+            <p>Currently, I am focusing on learning and exploring the field of web development, especially front-end development, with the determination to continuously improve my skills. I actively try new technologies and frameworks to broaden my horizons and gain practical experience. In my development journey, some of the skills I have developed are as follows:</p>
+            <div class="skill-list">
+              <ul>
+                <li>- HTML</li>
+                <li>- CSS</li>
+                <li>- JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of skills -->
+
+      <!-- Contact -->
+      <section id="contact">
+        <h1>Contact Me!</h1>
+        <div class="contact-grid">
+          <div class="left-section-contact">
+            <form id="contact-form" action="https://formspree.io/f/mnqenplo" method="POST">
+              <div>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Name" name="name" id="name1">
+                <p id="error-name" class="error-message"></p>
+              </div>
+              <div class="margin-top">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" name="email" id="email1">
+                <p id="error-email" class="error-message"></p>
+              </div>
+              <div class="margin-top">
+                <label for="message">Message</label>
+                <textarea id="message1" cols="30" rows="10" placeholder="Message" name="message"></textarea>
+                <p id="error-message1" class="error-message"></p>
+              </div>
+              <div class="margin-top">
+                <button type="submit" id="btn-submit">Submit Message</button>
+              </div>
+            </form>
+          </div>
+          <div class="right-section-contact">
+            <div class="contact-item">
+              <img src="image/iconmonstr-location-1-32.png"  alt="">
+              <div class="contact-item-detail">
+                <h4>Address</h4>
+                <p>Alam Sutera, Tangerang Selatan</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="image/iconmonstr-phone-4-32.png"  alt="">
+              <div class="contact-item-detail">
+                <h4>Phone</h4>
+                <p>(+62)821-9002-8872</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <img src="image/iconmonstr-email-3-32.png" alt="">
+              <div class="contact-item-detail">
+                <h4>Email</h4>
+                <p>clarawita28@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End of contact -->
+
+      <!-- footer -->
+      <section id="footer">
+        <div class="top-section-foot">
+          <a href="https://github.com/Clarawita" target="_blank">
+            <img src="image/iconmonstr-github-3-32.png" alt="">
+          </a>
+          <a href="https://www.linkedin.com/in/clarawita" target="_blank">
+            <img src="image/iconmonstr-linkedin-3-32.png" alt="">
+          </a>
+        </div>
+        <div class="bottom-section-foot">
+          <h5>© 2024 - Made by Clarawita</h5>
+        </div>
+      </section>
+      <!-- end of footer -->
+
+    </div>
+  </header>
+
+  <script src="script.js"></script>
+</body>
+</html>
