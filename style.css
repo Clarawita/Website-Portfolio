@@ -181,13 +181,13 @@ p{
 
 .grid-2{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 4rem;
-  padding: 4rem 10rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  padding: 4rem 7rem 2rem;
 }
 
 .port{
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: rgb(244, 247, 251);
   border-radius: 20px;
 }
@@ -199,7 +199,7 @@ p{
 .port-title{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .port-title{
@@ -232,6 +232,10 @@ p{
   padding: 0.1rem 0.5rem;
 }
 
+.port-desc{
+  font-size: 1rem;
+}
+
 #skill{
   padding: 8.5rem;
   background-color: rgb(246, 253, 225);
@@ -246,6 +250,11 @@ p{
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   padding-top: 8.5rem;
+}
+
+.left-section-skill{
+  display: flex;
+  flex-direction: column;
 }
 
 .education{
@@ -263,6 +272,10 @@ p{
   position: relative;
   background-color: rgb(135, 135, 135);
 }
+/* 
+.education-info{
+  border: 1px solid black;
+} */
 
 .education-info p{
   margin: 0.5rem 0 1.2rem;
